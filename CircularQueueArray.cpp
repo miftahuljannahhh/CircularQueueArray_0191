@@ -28,5 +28,12 @@ private:
         FRONT = 0; // 2.a
         REAR = 0;  // 2.b
     }
-}
+    else
+    {
+        // Jika benar berada diposisi terakhir array, kembali ke awal array
+        if (REAR == max - 1)
+            REAR = 0;
+        else
+            REAR = REAR + 1;
+    }
 };
